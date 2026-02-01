@@ -1,0 +1,22 @@
+*{margin: 0;
+padding: 0;}
+body{
+    text-align: center;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    font-size: 0.5em;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: rgba(194, 253, 116, 0.822);
+}
+.button:hover{
+    background-color: rgba(116, 210, 253, 0.822);
+}
+#dice, #dice1, #dice2, #dice3, #dice21, #dice22 {
+    margin: 20px;
+    font-weight: bold;
+}
