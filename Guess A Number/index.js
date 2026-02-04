@@ -22,7 +22,7 @@ while (running) {
         } else {
             window.alert(`Congratulations! You guessed the number ${answer} in ${attempts} attempts.`);
             running = false;
-        }   
+        }
     }
 }
 
