@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+    color: #333;
+}
+button{
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: #45a049;
+}
+button:active{
+    background-color: #3e8e41;
+}
+input[type="number"]{
+    width: 50px;
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+label{
+    font-size: 1em;
+
+    color: #333;
+}
+#result{
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #555;
+}
+#resultimages img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+#resultimages{
+    margin-top: 20px;
+}
