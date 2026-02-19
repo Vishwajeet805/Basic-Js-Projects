@@ -2,10 +2,10 @@ const playerdisplay = document.getElementById("playerDisplay");
 const botdisplay = document.getElementById("botDisplay");
 const pdisplay = document.getElementById("resultDisplay");
 const choices = [`Rock`, `Paper`, `Scissors`];
-const pscoredsi=document.getElementById("pscore");
-const bscoredsi=document.getElementById("bscore");
-let pscore=0;
-let bscore=0;
+const pscoredsi = document.getElementById("pscore");
+const bscoredsi = document.getElementById("bscore");
+let pscore = 0;
+let bscore = 0;
 function playgame(playerChoice) {
     const botChoice = choices[Math.floor(Math.random() * 3)];
     let result = "";
@@ -32,12 +32,12 @@ function playgame(playerChoice) {
             case "You Win! 🥳":
                 pdisplay.classList.add("greentext");
                 pscore++;
-                pscoredsi.textContent=`${pscore}`
+                pscoredsi.textContent = `${pscore}`
                 break;
             case "You Lose! 🤡":
                 pdisplay.classList.add("redtext");
                 bscore++;
-                bscoredsi.textContent=`${bscore}`
+                bscoredsi.textContent = `${bscore}`
                 break;
             default:
                 pdisplay.classList.add("greytext");
