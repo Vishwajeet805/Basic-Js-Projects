@@ -10,12 +10,10 @@ function addTask() {
     const li = document.createElement("li");
     li.textContent = taskText;
 
-    // Mark complete on click
     li.addEventListener("click", function () {
         li.classList.toggle("completed");
     });
 
-    // Delete button
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "X";
     deleteBtn.className = "delete-btn";
