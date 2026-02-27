@@ -33,7 +33,16 @@ function createNoteElement(text) {
     document.getElementById("notesContainer").appendChild(noteDiv);
 }
 
+function saveNote(note) {
+    let notes = JSON.parse(localStorage.getItem("notes")) || [];
+    notes.push(note);
+    localStorage.setItem("notes", JSON.stringify(notes));
+}
 
+function loadNotes() {
+    let notes = JSON.parse(localStorage.getItem("notes")) || [];
+    notes.forEach(note => createNoteElement(note));
+}
 
 function deleteNote(noteToDelete) {
     let notes = JSON.parse(localStorage.getItem("notes")) || [];
